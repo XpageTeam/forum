@@ -1,0 +1,86 @@
+.contacts
+	&-top
+		display: flex
+		justify-content: space-between
+		color: #fff
+	&-cont
+		border-bottom: 1px solid rgba(255, 255, 255, 0.12)
+
+	&-map
+		position: relative
+		margin-top: 40px
+
+	&-info
+		color: #fff
+		padding: 50px 0 60px
+		line-height: 1.7
+
+.map
+
+	&-info
+		position: absolute
+		bottom: 60px
+		left: 60px
+		background: var(--main-color)
+		padding: 60px 40px
+		color: #fff
+		max-width: 305px
+
+		&__title 
+			font-weight: bold
+			font-size: rem(18)
+
+		&__btn
+			margin-top: 25px
+
+ymaps[class*="-cluster"]
+	ymaps
+		color: #fff
+
+@media screen and (max-width: 1400px)
+
+	.contacts-info
+		padding: 40px 0
+
+@media screen and (max-width: 1200px)
+
+	.map-info
+		bottom: 30px
+		left: 30px
+		padding: 40px 20px
+
+@media screen and (max-width: 1000px)
+
+	.contacts
+		&-map
+			margin-top: 25px
+
+		&-info
+			padding: 20px 0
+
+	.map-info
+		bottom: 20px
+		left: 20px
+		padding: 20px
+
+		&__title
+			font-size: 1rem
+
+		&__btn
+			margin-top: 15px
+
+@media screen and (max-width: 660px)
+
+	.map
+		height: 350px !important
+
+		img 
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+		&-info
+			position: relative
+			left: 0
+			bottom: 0
+			padding: 20px 0

@@ -1,0 +1,326 @@
+.services
+	&-cont 
+		padding: 95px 0 110px
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 30px 0 -30px -30px
+
+	&__item 
+		width: calc((100% - 30px * 4) / 4)
+		margin: 0 0 30px 30px
+		display: flex
+		flex-direction: column
+		cursor: pointer
+
+		&.active
+			.services-btn
+				&:before
+					transform: rotate(-45deg)
+
+
+		&-info
+			background: var(--main-color)
+			color: #fff
+			font-size: rem(18)
+			font-weight: bold
+			padding: 30px 40px
+			flex: 1 1 auto
+			display: flex
+			flex-direction: column
+
+	&-info
+		&__text
+			margin-bottom: 35px
+
+		&__btn
+			.btn 
+				margin-right: 20px
+				border: 1px solid var(--main-color) 
+
+
+	&-btn
+		position: relative
+		size: 40px
+		border-radius: 50%
+		background: #fff
+		margin-top: auto
+
+		&:before 
+			content: ''
+			position: absolute
+			top: calc(50% - 3px)
+			left: calc(50% - 3px)
+			size: 6px
+			display: block
+			border-top: 1px solid var(--main-color)
+			border-right: 1px solid var(--main-color)
+			transform: rotate(135deg)
+			transition: transform .3s ease
+		
+
+	&__content
+		margin-top: 40px
+		opacity: 0
+		transform: translateY(20%)
+		transition: opacity .4s ease, transform .6s ease
+		transition-delay: .4s
+
+		&-wr
+			display: flex
+			margin-top: 25px
+			align-items: flex-start
+
+
+		&-title
+			font-size: rem(24)
+			font-weight: bold
+
+
+	&-slider
+		position: relative
+		width: 457px
+		flex: none
+		margin: 0 23px
+
+		+ .services-info
+			margin-left: 50px
+
+		&__item
+			img
+				size: 100%
+
+		.swiper
+			&-button
+				&-prev
+					left: -23px
+				&-next
+					right: -23px
+
+	&-info
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+
+
+	&-title 
+		margin-bottom: 40px
+
+	&__price
+		display: flex
+		flex-direction: row-reverse
+		align-items: center
+		margin-bottom: 50px
+
+		.price
+			position: relative
+			border-radius: 5px
+			line-height: 1
+			color: #fff
+			padding: 20px 25px
+			background: var(--main-color)
+			font-size: rem(25)
+			font-weight: bold
+			margin-right: 20px
+
+		.old__price
+			position: relative
+			font-size: rem(20)
+			color: #ccc
+
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 0
+				width: 100%
+				height: 1px
+				background: #ccc
+				transform: rotate(12deg)
+
+
+			+ .price
+				&:before 
+					content: '*'
+					position: absolute
+					top: 12px
+					right: 15px
+					color: #fff
+
+
+
+
+
+
+
+		&-label
+			font-size: rem(14)
+			color: #b2b5bd
+			margin-bottom: 15px
+
+
+	
+	.tabs-content.active
+		.services__content
+			opacity: 1
+			transform: translateY(0)
+
+@media screen and (max-width: 1500px)
+	.services-cont
+		padding: 60px 0 70px
+
+@media screen and (max-width: 1400px)
+
+	.services
+		&-title
+			margin-bottom: 20px
+
+		&__item-info
+			padding: 25px
+
+		&-info__text
+			margin-bottom: 20px
+
+
+@media screen and (max-width: 1200px)
+	
+	.services
+		&__item
+			width: calc((100% - 20px * 4) / 4)
+			margin: 0 0 30px 20px
+
+			&-info
+				padding: 20px
+				font-size: 1rem
+
+			&__text
+				margin-bottom: 10px
+
+		&__content
+			margin-top: 35px
+
+			&-wr
+				margin-top: 25px
+
+		&-slider
+			position: sticky
+			top: 100px
+
+		&-info
+			margin-left: 30px
+
+		&__price
+			margin-bottom: 30px
+
+			.price
+				padding: 12px 18px
+
+
+
+@media screen and (max-width: 1000px)
+	.services
+		&-cont
+			padding: 30px 0
+
+		&__item
+			width: calc((100% - 20px * 2) / 2)
+			margin: 0 0 30px 20px
+
+			&-slider
+				img
+					width: 100%
+
+		&__content-wr
+			flex-direction: column
+
+		&-slider
+			margin: 0 auto 30px
+			position: relative
+			top: 0
+
+		&-info
+			margin-left: 0
+
+		&__price
+			font-size: 1.2rem
+
+		&__list
+			display: none
+
+		&__content
+			opacity: 1
+			transform: none
+			margin: 0
+
+			&-title
+				position: relative
+				padding: 20px 30px 20px 0
+
+				&.js__active
+					&:after
+						transform: rotate(225deg)
+
+				&:after
+					content: ''
+					display: block
+					position: absolute
+					right: 20px
+					top: calc(50% - 3px)
+					size: 6px
+					border-right: 1px solid #000
+					border-bottom: 1px solid #000
+					transform: rotate(45deg)
+					transition: transform .3s ease
+
+
+
+
+			&-wr
+				display: none
+				margin: 20px 0
+
+
+	.tabs-content
+		opacity: 1 !important
+		pointer-events: all !important
+		position: static !important
+
+
+		&:not(:first-child)
+			border-top: 1px solid var(--main-color)
+
+
+@media screen and (max-width: 660px)
+	
+	.services
+		&__list
+			margin: 20px 0 -30px 0
+
+		&__item
+			width: 100%
+			margin: 0 0 30px 0
+
+		&__content-title
+			font-size: 1.4rem
+
+		&-slider
+			top: 0
+			width: 100%
+
+			.swiper-button
+				&-prev
+					left: 0px
+				&-next
+					right: 0
+
+		&__content-title
+			font-size: 1rem
+			padding: 15px 30px 15px 0
+
+
+@media screen and (max-width: 370px)
+	
+	.services-info__btn
+		.btn + .btn 
+			margin-top: 20px

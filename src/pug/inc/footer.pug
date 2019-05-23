@@ -1,0 +1,47 @@
+
+footer.footer-cont#6
+	.contacts-cont
+		.wrapper
+			.contacts
+				.contacts-top
+					.contacts-title.title Контакты
+					.contacts-soc
+						.soc
+							a.soc__link(href="#") 
+								img(src="img/ico-fb.svg")
+							a.soc__link(href="#") 
+								img(src="img/ico-insta.svg")
+							a.soc__link(href="#") 
+								img(src="img/ico-vk.svg")
+				.contacts-map
+					.map
+						img(src="img/map.jpg", alt="")
+
+					.map-info
+						.map-info__title Пройди обследование<br> со скидкой 10%
+						.map-info__btn
+							a(href="").btn Открыть список цетров
+
+				.contacts-info
+					p Сиcтема менеджмента качества ИНВИТРО соответствует требованиям нормативных документов ГОСТ Р ИСО 15189:2015 «Лаборатории медицинские.<br> Частные требования к качеству и компетентности» и ГОСТ 9001-2015 (ISO 9001:2015). Для подтверждения достоверности выполняемых исследований ИНВИТРО регулярно принимает участие в нескольких программах внешней оценки качества:
+					ul
+						li <b>ФСВОК</b> - Система Внешней Оценки Качества клинических лабораторных исследований (Россия);
+						li <b>RIQAS</b> - Randox(Великобритания);
+						li <b>EQAS</b> - BIO-Rad (США)
+	.wrapper
+		.footer
+			.footer-political
+				span Не являемся медицинской организацией
+				a(href="") Политика конфиденциальности
+			.footer-copy
+				span.ico-age 18+
+				span.copy © Био Центр 2018
+			.footer-dev
+				a(href="#").dev
+					img(src="img/ico-dev.svg", alt="")
+
+#sprite(style="display: none")
+	<!-- Эту свг нужно вставлять инклюдом, т.к. она может меняться -->
+	include ../symbol/sprite.svg
+
+include forms.pug

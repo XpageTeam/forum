@@ -1,0 +1,22 @@
+header.head
+	.wrapper
+		.head__wrap
+			.head__logo
+				a.logo(href="#")
+					img.logo__main(src="img/logo-main.svg")
+					img.logo__footer(src="img/footer-logo.svg")
+			nav.head__menu
+				ul.h-menu
+					li
+						a.h-menu__link.active(href="#") О компании
+					each title in ["Лаборатория", "Каталог", "Проекты", "Новости", "Услуги", "Контакты",  ]
+						li
+							a.h-menu__link(href="#")=title
+			.head__phone
+				address.h-phone
+					a(href="tel: +7 (351) 259-36-36") +7 (351) 259-36-36
+			.head__search
+				a.search-link(href="#")
+			.head__burger
+				.burger
+					span

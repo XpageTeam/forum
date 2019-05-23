@@ -1,0 +1,118 @@
+.information
+	display: flex
+	align-items: center
+
+
+	&-cont 
+		background: url('../img/information-bg.jpg') no-repeat center
+		background-size: cover
+		color: #fff
+		padding: 90px 0
+
+	&-img
+		flex: none
+		position: relative
+
+		img 
+			position: relative
+			z-index: 2
+
+			
+
+	&-text
+		font-weight: bold
+		font-size: rem(30)
+
+	&-info 
+		margin-left: 140px
+
+		&__dop
+			display: inline-block
+			background: #fff
+			border-radius: 20px
+			line-height: 1
+			color: var(--main-color)
+			padding: 10px 20px
+			margin-top: 20px
+
+
+
+.circle 
+	width: 80px
+	height: 80px
+	background: #fff
+	display: block
+	position: absolute 40px * * 45px
+	border-radius: 50%
+	animation: orbita 6s ease-out infinite
+	transform-origin: center
+	z-index: 1
+	position: absolute
+	top: calc(50% - 40px)
+	left: calc(50% - 40px)
+
+
+@keyframes orbita
+	0%
+		transform: rotate(0turn) translateY(-170px)
+	25%
+		transform: rotate(0.24turn) translateY(-170px)
+	50%
+		transform: rotate(0.5turn) translateY(-170px)
+	75%
+		transform: rotate(0.75turn) translateY(-170px)
+	100%
+		transform: rotate(1turn) translateY(-170px)
+
+
+@media screen and (max-width: 1500px)
+	.information-cont
+		padding: 60px 0
+
+@media screen and (max-width: 1200px)
+
+	.information
+		&-info
+			margin-left: 45px
+
+		&-text
+			font-size: rem(25)
+
+@media screen and (max-width: 1000px)
+
+	.information
+		&-cont
+			padding: 30px 0
+
+		&-img
+			max-width: 270px
+
+		&-text
+			font-size: 1.4rem
+
+	.circle
+		width: 40px
+		height: 40px
+		top: calc(50% - 20px)
+		left: calc(50% - 20px)
+
+	@keyframes orbita
+		0%
+			transform: rotate(0turn) translateY(-120px)
+		25%
+			transform: rotate(0.24turn) translateY(-120px)
+		50%
+			transform: rotate(0.5turn) translateY(-120px)
+		75%
+			transform: rotate(0.75turn) translateY(-120px)
+		100%
+			transform: rotate(1turn) translateY(-120px)
+
+
+@media screen and (max-width: 667px)
+
+	.information
+		flex-direction: column
+
+		&-info
+			margin-left: 0

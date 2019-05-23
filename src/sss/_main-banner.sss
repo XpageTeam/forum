@@ -1,0 +1,157 @@
+.main-banner
+	display: flex
+	align-items: center
+
+	&__cont
+		position: relative
+		color: #fff
+
+		img 
+			display: block
+			width: 100%
+
+		.wrapper 
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			height: 100%
+			display: flex 
+			flex-direction: column
+			justify-content: center
+
+	&__title
+		font-size: rem(38)
+		font-weight: bold
+
+	&__text
+		font-size: rem(14)
+		margin-top: 40px
+		line-height: 1.7
+
+.banner
+	&-logo
+		position: relative
+		margin-left: 120px
+		margin-right: -120px
+
+		&:before 
+			content: ''
+			position: absolute
+			top: -60px
+			left: -60px
+			size: 120px
+			background: var(--main-color)
+			z-index: 10
+			display: block
+		
+		svg 
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			overflow: visible !important
+
+		circle, path
+			opacity: 1
+			transition: opacity .3s ease
+			// transition-delay: 4s
+
+		&.js__animated
+			circle, path
+				opacity: 1 
+
+
+@media screen and (max-width: 1600px)
+	
+	.banner-logo:before
+		top: -45px
+
+@media screen and (max-width: 1500px)
+	
+	.banner-logo
+		margin-right: 
+		max-width: 430px
+
+
+		&:before
+			top: -50px
+			left: -50px
+			width: 100px
+			height: 100px
+
+	.main-banner__title
+		font-size: 2rem
+
+@media screen and (max-width: 1400px)
+
+	.main-banner
+		&__title
+			font-size: 1.6rem
+
+		&__text
+			margin-top: 25px
+
+@media screen and (max-width: 1300px)
+
+	.banner-logo
+
+		&:before
+			top: -40px
+			left: -40px
+			width: 80px
+			height: 80px
+
+@media screen and (max-width: 1200px)
+
+	.main-banner__cont
+		figure
+			img
+				height: 100vh
+
+	.banner-logo
+		margin-left: 60px
+		margin-right: 0
+
+@media screen and (max-width: 1000px)
+	.banner-logo
+
+		&:before
+			top: -30px
+			left: -30px
+			width: 60px
+			height: 60px
+@media screen and (max-width: 660px)
+
+	.main-banner
+		flex-direction: column-reverse
+		padding: 140px 0 30px
+
+		&__cont
+			.wrapper
+				position: relative
+				z-index: 9
+
+			figure
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				img
+					height: 100%
+					object-fit: cover
+
+		&__title
+			font-size: 1.3rem
+
+	.banner-logo
+		margin: 20px 0 40px
+
+		&:before
+			top: -33px
+			left: -33px
+			width: 66px
+			height: 66px
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Главная
+		include inc/head.pug
+		include inc/css.pug
+	body.main.loading
+		.mobile-menu
+		main#content
+			include inc/header.pug
+			.content
+				.main-banner__cont
+					figure
+						img(src="img/main-banner.jpg", alt="")
+					.main-banner-wr
+						.wrapper
+							.main-banner
+								.main-banner__title  20 Квартир <span>по специальной цене</span>
+								.main-banner__text Жители ЖК «Министр» могут не тревожиться за безопасность своих детей, у них будет своя закрытая территория с видеонаблюдением по периметру. Также работает охрана.
+				.services-cont
+					.wrapper
+						.services
+							.title.services-title Наши услуги
+							.services-text Только качественные услуги от настоящих профессионалов своего дела
+							.services__list
+								a(href="#").services__item
+									.services__item-img
+										img(src="img/services-1.svg", alt="")
+									.services__item-title Продажа недвижимости
+									.services__item-text С нами продавать выгодно и быстро
+									.btn Узнать больше
+								a(href="#").services__item
+									.services__item-img
+										img(src="img/services-2.svg", alt="")
+									.services__item-title Ипотека
+									.services__item-text Одобрение за 2 часа, скидки до 1,5 %от ставки банка, материнский капитал
+									.btn Узнать больше
+								a(href="#").services__item
+									.services__item-img
+										img(src="img/services-3.svg", alt="")
+									.services__item-title Оценка имущества
+									.services__item-text Грамотно, оперативно, в соответствии с законодательством РФ
+									.btn Узнать больше
+								a(href="#").services__item
+									.services__item-img
+										img(src="img/services-4.svg", alt="")
+									.services__item-title Подбор квартир
+									.services__item-text Бесплатный подбор новостроек, безопасная покупка на вторичном рынке
+									.btn Узнать больше
+								a(href="#").services__item
+									.services__item-img
+										img(src="img/services-5.svg", alt="")
+									.services__item-title Юридические услуги
+									.services__item-text Профессиональное юридическое сопровождение, гарантия безопасности сделки
+									.btn Узнать больше
+								a(href="#").services__item
+									.services__item-img
+										img(src="img/services-6.svg", alt="")
+									.services__item-title Срочный выкуп
+									.services__item-text Быстро, безопасно, по выгодной для Вас цене
+									.btn Узнать больше
+				.best-offer-cont
+					.wrapper
+						.best-offer
+							.title.best-offer-title Лучшие предложения
+							.best-offer-text Самая большая база недвижимости и эксклюзивные ценовые условия от ведущих застройщиков России.
+							.slider-nav
+								ul.slider-nav__list
+									li.slider-nav__item
+										.slider-nav__link
+											input(type="radio" name="filter" id='1' value="1")
+											label(for="1") Новостройки
+									li.slider-nav__item
+										.slider-nav__link 
+											input(type="radio" name="filter" id='2' value="2")
+											label(for="2") Вторичная недвижимость Челябинска
+									li.slider-nav__item
+										.slider-nav__link 
+											input(type="radio" name="filter" id='3' value="3")
+											label(for="3") Аренда
+									li.slider-nav__item
+										.slider-nav__link 
+											input(type="radio" name="filter" id='4' value="4")
+											label(for="4") Коммерческая недвижимость
+									li.slider-nav__item
+										.slider-nav__link 
+											input(type="radio" name="filter" id='5' value="5")
+											label(for="5") Дома, дачи, участки
+									li.slider-nav__item
+										.slider-nav__link 
+											input(type="radio" name="filter" id='6' value="6")
+											label(for="6") Недвижиость Челябинской области
+									li.slider-nav__item.reset-filter
+										.slider-nav__link 
+											input(type="radio" name="filter" id='7' value=" ")
+											label(for="7") Все объекты
+									
+							.best-offer-slider
+								.slider-block__slide(data-id="1")
+									figure.slider-block__slide-img
+										img(src="img/photos/slide.jpg", alt="")
+									.slider-block__info
+										.slider-block__info__title Ремонт помещения 1
+										.slider-block__info__text Ремонт жилых и нежилых помещений выполняется нами с целью улучшения их внешнего вида, организации пространства, удобного для работы, создания имиджа компании, повышения ее статуса. Оказываемые нами услуги по ремонту помещений популярны среди владельцев офисов, а также жилых домов. Они позволяют устранить небольшие шероховатости, оставшиеся после ремонта зданий, придать объектам завершенный вид, улучшить их дизайн. Если вы желаете сделать свой дом современным и красивым, наши мастера помогут вам это сделать.
+										a(href="#").btn Подробнее
+								.slider-block__slide(data-id="2")
+									figure.slider-block__slide-img
+										img(src="img/photos/slide-1.jpg", alt="")
+									.slider-block__info
+										.slider-block__info__title Ремонт помещения 2
+										.slider-block__info__text Ремонт жилых и нежилых помещений выполняется нами с целью улучшения их внешнего вида, организации пространства, удобного для работы, создания имиджа компании, повышения ее статуса. Оказываемые нами услуги по ремонту помещений популярны среди владельцев офисов, а также жилых домов. Они позволяют устранить небольшие шероховатости, оставшиеся после ремонта зданий, придать объектам завершенный вид, улучшить их дизайн. Если вы желаете сделать свой дом современным и красивым, наши мастера помогут вам это сделать.
+										a(href="#").btn Подробнее
+								.slider-block__slide(data-id="3")
+									figure.slider-block__slide-img
+										img(src="img/photos/slide-1.jpg", alt="")
+									.slider-block__info
+										.slider-block__info__title Ремонт помещения 3
+										.slider-block__info__text Ремонт жилых и нежилых помещений выполняется нами с целью улучшения их внешнего вида, организации пространства, удобного для работы, создания имиджа компании, повышения ее статуса. Оказываемые нами услуги по ремонту помещений популярны среди владельцев офисов, а также жилых домов. Они позволяют устранить небольшие шероховатости, оставшиеся после ремонта зданий, придать объектам завершенный вид, улучшить их дизайн. Если вы желаете сделать свой дом современным и красивым, наши мастера помогут вам это сделать.
+										a(href="#").btn Подробнее
+								.slider-block__slide(data-id="4")
+									figure.slider-block__slide-img
+										img(src="img/photos/slide-1.jpg", alt="")
+									.slider-block__info
+										.slider-block__info__title Ремонт помещения 4
+										.slider-block__info__text Ремонт жилых и нежилых помещений выполняется нами с целью улучшения их внешнего вида, организации пространства, удобного для работы, создания имиджа компании, повышения ее статуса. Оказываемые нами услуги по ремонту помещений популярны среди владельцев офисов, а также жилых домов. Они позволяют устранить небольшие шероховатости, оставшиеся после ремонта зданий, придать объектам завершенный вид, улучшить их дизайн. Если вы желаете сделать свой дом современным и красивым, наши мастера помогут вам это сделать.
+										a(href="#").btn Подробнее
+								.slider-block__slide(data-id="5")
+									figure.slider-block__slide-img
+										img(src="img/photos/slide-1.jpg", alt="")
+									.slider-block__info
+										.slider-block__info__title Ремонт помещения 5
+										.slider-block__info__text Ремонт жилых и нежилых помещений выполняется нами с целью улучшения их внешнего вида, организации пространства, удобного для работы, создания имиджа компании, повышения ее статуса. Оказываемые нами услуги по ремонту помещений популярны среди владельцев офисов, а также жилых домов. Они позволяют устранить небольшие шероховатости, оставшиеся после ремонта зданий, придать объектам завершенный вид, улучшить их дизайн. Если вы желаете сделать свой дом современным и красивым, наши мастера помогут вам это сделать.
+										a(href="#").btn Подробнее
+								.slider-block__slide(data-id="6")
+									figure.slider-block__slide-img
+										img(src="img/photos/slide-1.jpg", alt="")
+									.slider-block__info
+										.slider-block__info__title Ремонт помещения 6
+										.slider-block__info__text Ремонт жилых и нежилых помещений выполняется нами с целью улучшения их внешнего вида, организации пространства, удобного для работы, создания имиджа компании, повышения ее статуса. Оказываемые нами услуги по ремонту помещений популярны среди владельцев офисов, а также жилых домов. Они позволяют устранить небольшие шероховатости, оставшиеся после ремонта зданий, придать объектам завершенный вид, улучшить их дизайн. Если вы желаете сделать свой дом современным и красивым, наши мастера помогут вам это сделать.
+										a(href="#").btn Подробнее
+						
+
+				
+				
+		include inc/footer.pug
+		include inc/scripts.pug

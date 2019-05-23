@@ -1,0 +1,256 @@
+.club-card
+	position: relative
+	background: #fff
+	padding: 70px 115px 90px
+	margin-top: -83px
+	z-index: 11
+	margin-bottom: 89px
+
+	&-form__label
+		margin-bottom: 10px
+
+	&__cont
+		background: var(--second-color)
+		z-index: 10
+		margin-bottom: 100px
+
+	&__title
+		font-size: rem(35)
+		font-weight: bold
+		text-align: center
+		margin-bottom: 20px
+
+		span 
+			color: var(--main-color)
+
+	&__text
+		text-align: center
+		margin-bottom: 40px
+		line-height: 1.7
+
+		span 
+			color: var(--main-color)
+
+	&__middle
+		display: flex
+
+	&__form
+		margin-right: 55px
+
+	&__img
+		flex: none
+		margin-top: 25px
+
+		&--required
+			position: relative
+			margin-left: 40px
+			font-size: rem(13)
+
+			&:before
+				content: "*"
+				display: inline-block
+				margin-right: 5px
+				color: var(--main-color)
+
+
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap 
+		margin: 0 0 -40px -30px
+
+
+
+
+
+
+	&__input
+		&-cont
+			display: flex
+			flex-direction: column-reverse
+			width: 100%
+			margin: 0 0 40px 30px
+
+			&--min 
+				width: calc((100% - 30px * 2) / 2)
+
+			input 
+				height: 56px
+				border-radius: 5px
+				border: 1px solid transparent
+				background: var(--second-color)
+				color: #000
+				transition: border-color .3s ease
+
+				&:active, &:focus
+					border-color: var(--main-color)
+
+	&__bottom
+		margin-top: 40px
+
+		&-btn
+			margin-top: 40px
+
+			.btn
+				&:not(:last-child)
+					margin-right: 50px
+
+
+
+
+		&-text
+			font-size: rem(12)
+
+			a 
+				color: var(--main-color)
+
+	&__submit
+		border: 1px solid transparent
+		border-radius: 31px
+
+		&:nth-child(1)
+			background: var(--main-color)
+			color: #fff
+		&:nth-child(2)
+			border-color: var(--main-color)
+			color: var(--main-color)
+			
+
+	&__bot
+		display: flex 
+		justify-content: space-between
+		margin-top: 70px
+
+		&-phone
+			display: flex 
+			flex-direction: column
+			align-items: flex-start
+			flex: 1 1 auto
+
+			&:last-child
+				align-items: flex-end
+
+			&:nth-child(2)
+				border-left: 1px solid var(--second-color)
+				border-right: 1px solid var(--second-color)
+				display: flex 
+				align-items: center
+
+			a 
+				font-size: rem(16)
+				font-weight: bold
+				color: var(--main-color)
+
+			span 
+				color: #b2b5bd
+				display: flex 
+				flex-direction: column
+				align-items: flex-start
+
+
+
+
+
+@media screen and (max-width: 1500px)
+
+	.club-card
+		margin-bottom: 60px
+
+		&__cont
+			margin-bottom: 70px
+
+@media screen and (max-width: 1200px)
+
+	.club-card
+		padding: 50px 40px 50px
+
+
+		&__img
+			max-width: 360px
+
+@media screen and (max-width: 1000px)
+
+	.club-card
+		padding: 25px
+		margin-bottom: 35px
+
+		&__img
+			max-width: 100%
+			margin-top: 0
+
+			figure 
+				text-align: center
+		&__text
+			margin-bottom: 20px
+
+		&__title
+			font-size: 1.6rem
+			margin-bottom: 15px
+
+		&__middle
+			flex-direction: column-reverse
+
+		&__form
+			margin-right: 0
+			margin-top: 20px
+
+		&__bottom-btn .btn:not(:last-child)
+			margin-right: 30px
+
+		&__bot
+			margin-top: 40px
+
+			&-phone 
+
+				&:nth-child(2)
+					border: 0
+
+				a
+					font-size: .9rem
+
+@media screen and (max-width: 660px)
+
+	.club-card
+		margin: 0
+		padding: 20px
+
+		&__wrap
+			margin: 0 0 -40px 0
+
+
+
+		&__cont
+			margin-bottom: 20px
+			overflow-x: hidden
+
+			.wrapper 
+				padding: 0
+
+		&__title
+			font-size: 1.4rem
+
+		&__input-cont
+			margin: 0 0 20px 0
+
+			&--min
+				width: 100%
+
+		&__bottom-btn 
+			.btn:not(:last-child)
+				margin-right: 20px
+
+		&__bot
+			flex-direction: column
+
+			&-phone
+				&:not(:first-child)
+					margin-top: 20px
+
+				&:nth-child(2), &:nth-child(3)
+					align-items: flex-start
+
+@media screen and (max-width: 370px)
+	
+	.club-card__submit.btn + .club-card__submit.btn
+		margin-top: 20px
+

@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Главная</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;amp;subset=cyrillic" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="main loading">
+	<div class="mobile-menu"></div>
+	<main id="content">
+		<header class="head">
+			<div class="head__wrap">
+				<div class="head__logo"><a class="logo" href="#"><img class="logo__white active" src="img/logo-bio.png" alt="" /><img class="logo__color" src="img/logo-invitro.png" alt="" /></a></div>
+				<nav class="head__menu">
+					<ul class="h-menu">
+						<li class="h-menu__item active"><a class="h-menu__link" href="#1">Цель проекта</a></li>
+						<li class="h-menu__item"><a class="h-menu__link" href="#2">Услуги</a></li>
+						<li class="h-menu__item"><a class="h-menu__link" href="#3">Команда</a></li>
+						<li class="h-menu__item"><a class="h-menu__link" href="#4">Отзывы</a></li>
+						<li class="h-menu__item"><a class="h-menu__link" href="#5">FAQ</a></li>
+						<li class="h-menu__item"><a class="h-menu__link" href="#6">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="head__contacts">
+					<div class="head__contacts-phones">
+						<address class="h-phone"><a href="tel: 8 800 500 51 70">8 800 500 51 70</a></address>
+					</div>
+					<div class="h-city"><select class="h-city__select">
+							<option value="0" selected="">Челябинск</option>
+							<option value="1">Екатеринбург</option>
+							<option value="2">Екатеринбург</option>
+							<option value="4">Москва</option>
+							<option value="5">Комсомольск-на-Амуре</option>
+						</select></div>
+				</div>
+				<div class="head__btn"><a class="btn" href="">Оставить заявку</a></div>
+				<div class="head__soc">
+					<div class="soc"><a class="soc__link" href="#"> <img src="img/ico-fb.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-insta.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-vk.svg" /></a></div>
+				</div>
+				<div class="head__burger">
+					<div class="burger"><span></span></div>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="main-banner__cont" id="1">
+				<figure><img src="img/main-banner.jpg" alt="" /></figure>
+				<div class="wrapper">
+					<div class="main-banner">
+						<div>
+							<div class="main-banner__title">БИОЦЕНТР и ИНВИТРО — <br> квалифицированный подход<br>к улучшению качества<br> Вашей жизни!</div>
+							<div class="main-banner__text">Систематические лабораторные исследования текущего состояния вашего<br> организма и выполнение рекомендаций на основе результатов этих исследований<br> помогают Вам прожить долгую<br> и здоровую жизнь.</div>
+						</div>
+						<div class="banner-logo"><img src="img/banner-logo.png" alt="" /><svg width="537" height="539" viewBox="0 0 537 539" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+								<path id="health" d="M14.0938 18H11.832V10.1133H3.23047V18H0.980469V0.9375H3.23047V8.27344H11.832V0.9375H14.0938V18ZM23.0117 18.2344C21.293 18.2344 19.8945 17.6719 18.8164 16.5469C17.7383 15.4141 17.1992 13.9023 17.1992 12.0117V11.6133C17.1992 10.3555 17.4375 9.23438 17.9141 8.25C18.3984 7.25781 19.0703 6.48438 19.9297 5.92969C20.7969 5.36719 21.7344 5.08594 22.7422 5.08594C24.3906 5.08594 25.6719 5.62891 26.5859 6.71484C27.5 7.80078 27.957 9.35547 27.957 11.3789V12.2812H19.3672C19.3984 13.5312 19.7617 14.543 20.457 15.3164C21.1602 16.082 22.0508 16.4648 23.1289 16.4648C23.8945 16.4648 24.543 16.3086 25.0742 15.9961C25.6055 15.6836 26.0703 15.2695 26.4688 14.7539L27.793 15.7852C26.7305 17.418 25.1367 18.2344 23.0117 18.2344ZM22.7422 6.86719C21.8672 6.86719 21.1328 7.1875 20.5391 7.82812C19.9453 8.46094 19.5781 9.35156 19.4375 10.5H25.7891V10.3359C25.7266 9.23438 25.4297 8.38281 24.8984 7.78125C24.3672 7.17188 23.6484 6.86719 22.7422 6.86719ZM38.3047 18C38.1797 17.75 38.0781 17.3047 38 16.6641C36.9922 17.7109 35.7891 18.2344 34.3906 18.2344C33.1406 18.2344 32.1133 17.8828 31.3086 17.1797C30.5117 16.4688 30.1133 15.5703 30.1133 14.4844C30.1133 13.1641 30.6133 12.1406 31.6133 11.4141C32.6211 10.6797 34.0352 10.3125 35.8555 10.3125H37.9648V9.31641C37.9648 8.55859 37.7383 7.95703 37.2852 7.51172C36.832 7.05859 36.1641 6.83203 35.2812 6.83203C34.5078 6.83203 33.8594 7.02734 33.3359 7.41797C32.8125 7.80859 32.5508 8.28125 32.5508 8.83594H30.3711C30.3711 8.20312 30.5938 7.59375 31.0391 7.00781C31.4922 6.41406 32.1016 5.94531 32.8672 5.60156C33.6406 5.25781 34.4883 5.08594 35.4102 5.08594C36.8711 5.08594 38.0156 5.45312 38.8438 6.1875C39.6719 6.91406 40.1016 7.91797 40.1328 9.19922V15.0352C40.1328 16.1992 40.2812 17.125 40.5781 17.8125V18H38.3047ZM34.707 16.3477C35.3867 16.3477 36.0312 16.1719 36.6406 15.8203C37.25 15.4688 37.6914 15.0117 37.9648 14.4492V11.8477H36.2656C33.6094 11.8477 32.2812 12.625 32.2812 14.1797C32.2812 14.8594 32.5078 15.3906 32.9609 15.7734C33.4141 16.1562 33.9961 16.3477 34.707 16.3477ZM45.8867 18H43.7188V0H45.8867V18ZM52.3086 2.25V5.32031H54.6758V6.99609H52.3086V14.8594C52.3086 15.3672 52.4141 15.75 52.625 16.0078C52.8359 16.2578 53.1953 16.3828 53.7031 16.3828C53.9531 16.3828 54.2969 16.3359 54.7344 16.2422V18C54.1641 18.1562 53.6094 18.2344 53.0703 18.2344C52.1016 18.2344 51.3711 17.9414 50.8789 17.3555C50.3867 16.7695 50.1406 15.9375 50.1406 14.8594V6.99609H47.832V5.32031H50.1406V2.25H52.3086ZM59.3867 6.85547C60.3477 5.67578 61.5977 5.08594 63.1367 5.08594C65.8164 5.08594 67.168 6.59766 67.1914 9.62109V18H65.0234V9.60938C65.0156 8.69531 64.8047 8.01953 64.3906 7.58203C63.9844 7.14453 63.3477 6.92578 62.4805 6.92578C61.7773 6.92578 61.1602 7.11328 60.6289 7.48828C60.0977 7.86328 59.6836 8.35547 59.3867 8.96484V18H57.2188V0H59.3867V6.85547Z" fill="#fff">
+									<animateMotion xlink:href="#health" dur="3s" begin="0s" fill="freeze" repeatCount="indefinite" path="M338.439 341.568C286.442 393.565 229.566 430.995 181.781 451.497C157.886 461.749 136.286 467.759 118.719 469.252C101.129 470.747 87.6966 467.706 79.9953 460.005C72.294 452.303 69.2528 438.871 70.7476 421.281C72.2405 403.714 78.2506 382.113 88.5025 358.219C109.005 310.434 146.435 253.558 198.432 201.561C250.429 149.564 307.838 111.601 356.157 90.5661C380.318 80.0479 402.186 73.7718 419.953 72.0799C437.746 70.3856 451.307 73.2975 459.005 80.9953C466.702 88.6932 469.614 102.254 467.92 120.046C466.228 137.814 459.952 159.682 449.434 183.843C428.399 232.162 390.436 289.571 338.439 341.568Z">
+									</animateMotion>
+
+								</path>
+
+
+
+								<path id="life" d="M3.24219 17.1602H11.3281V19H0.980469V1.9375H3.24219V17.1602ZM15.9102 19H13.7422V6.32031H15.9102V19ZM13.5664 2.95703C13.5664 2.60547 13.6719 2.30859 13.8828 2.06641C14.1016 1.82422 14.4219 1.70312 14.8438 1.70312C15.2656 1.70312 15.5859 1.82422 15.8047 2.06641C16.0234 2.30859 16.1328 2.60547 16.1328 2.95703C16.1328 3.30859 16.0234 3.60156 15.8047 3.83594C15.5859 4.07031 15.2656 4.1875 14.8438 4.1875C14.4219 4.1875 14.1016 4.07031 13.8828 3.83594C13.6719 3.60156 13.5664 3.30859 13.5664 2.95703ZM20.457 19V7.99609H18.4531V6.32031H20.457V5.01953C20.457 3.66016 20.8203 2.60937 21.5469 1.86719C22.2734 1.125 23.3008 0.753906 24.6289 0.753906C25.1289 0.753906 25.625 0.820313 26.1172 0.953125L26 2.71094C25.6328 2.64062 25.2422 2.60547 24.8281 2.60547C24.125 2.60547 23.582 2.8125 23.1992 3.22656C22.8164 3.63281 22.625 4.21875 22.625 4.98438V6.32031H25.332V7.99609H22.625V19H20.457ZM32.7148 19.2344C30.9961 19.2344 29.5977 18.6719 28.5195 17.5469C27.4414 16.4141 26.9023 14.9023 26.9023 13.0117V12.6133C26.9023 11.3555 27.1406 10.2344 27.6172 9.25C28.1016 8.25781 28.7734 7.48438 29.6328 6.92969C30.5 6.36719 31.4375 6.08594 32.4453 6.08594C34.0938 6.08594 35.375 6.62891 36.2891 7.71484C37.2031 8.80078 37.6602 10.3555 37.6602 12.3789V13.2812H29.0703C29.1016 14.5312 29.4648 15.543 30.1602 16.3164C30.8633 17.082 31.7539 17.4648 32.832 17.4648C33.5977 17.4648 34.2461 17.3086 34.7773 16.9961C35.3086 16.6836 35.7734 16.2695 36.1719 15.7539L37.4961 16.7852C36.4336 18.418 34.8398 19.2344 32.7148 19.2344ZM32.4453 7.86719C31.5703 7.86719 30.8359 8.1875 30.2422 8.82812C29.6484 9.46094 29.2812 10.3516 29.1406 11.5H35.4922V11.3359C35.4297 10.2344 35.1328 9.38281 34.6016 8.78125C34.0703 8.17188 33.3516 7.86719 32.4453 7.86719Z" fill="#fff">
+									<animateMotion xlink:href="#life" dur="4s" begin="1s" fill="freeze" repeatCount="indefinite" path="M368.5 272.006C368.5 345.54 354.75 412.225 335.458 460.511C325.811 484.656 314.787 504.18 303.421 517.658C292.04 531.152 280.391 538.5 269.5 538.5C258.609 538.5 246.96 531.152 235.579 517.658C224.213 504.18 213.189 484.656 203.542 460.511C184.25 412.225 170.5 345.54 170.5 272.006C170.5 198.471 184.25 131.032 203.543 81.9919C213.19 57.4696 224.215 37.5692 235.582 23.8091C246.965 10.0301 258.614 2.5 269.5 2.5C280.386 2.5 292.035 10.0301 303.418 23.8091C314.785 37.5692 325.81 57.4696 335.457 81.9919C354.75 131.032 368.5 198.471 368.5 272.006Z">
+									</animateMotion>
+
+								</path>
+
+
+								<path id="joy" d="M9.12891 0.9375H11.3906V13.0195C11.3906 14.6523 10.8984 15.9297 9.91406 16.8516C8.9375 17.7734 7.63281 18.2344 6 18.2344C4.30469 18.2344 2.98438 17.8008 2.03906 16.9336C1.09375 16.0664 0.621094 14.8516 0.621094 13.2891H2.87109C2.87109 14.2656 3.13672 15.0273 3.66797 15.5742C4.20703 16.1211 4.98438 16.3945 6 16.3945C6.92969 16.3945 7.67969 16.1016 8.25 15.5156C8.82812 14.9297 9.12109 14.1094 9.12891 13.0547V0.9375ZM14.3086 11.543C14.3086 10.3008 14.5508 9.18359 15.0352 8.19141C15.5273 7.19922 16.207 6.43359 17.0742 5.89453C17.9492 5.35547 18.9453 5.08594 20.0625 5.08594C21.7891 5.08594 23.1836 5.68359 24.2461 6.87891C25.3164 8.07422 25.8516 9.66406 25.8516 11.6484V11.8008C25.8516 13.0352 25.6133 14.1445 25.1367 15.1289C24.668 16.1055 23.9922 16.8672 23.1094 17.4141C22.2344 17.9609 21.2266 18.2344 20.0859 18.2344C18.3672 18.2344 16.9727 17.6367 15.9023 16.4414C14.8398 15.2461 14.3086 13.6641 14.3086 11.6953V11.543ZM16.4883 11.8008C16.4883 13.207 16.8125 14.3359 17.4609 15.1875C18.1172 16.0391 18.9922 16.4648 20.0859 16.4648C21.1875 16.4648 22.0625 16.0352 22.7109 15.1758C23.3594 14.3086 23.6836 13.0977 23.6836 11.543C23.6836 10.1523 23.3516 9.02734 22.6875 8.16797C22.0312 7.30078 21.1562 6.86719 20.0625 6.86719C18.9922 6.86719 18.1289 7.29297 17.4727 8.14453C16.8164 8.99609 16.4883 10.2148 16.4883 11.8008ZM32.5312 14.8242L35.4844 5.32031H37.8047L32.707 19.957C31.918 22.0664 30.6641 23.1211 28.9453 23.1211L28.5352 23.0859L27.7266 22.9336V21.1758L28.3125 21.2227C29.0469 21.2227 29.6172 21.0742 30.0234 20.7773C30.4375 20.4805 30.7773 19.9375 31.043 19.1484L31.5234 17.8594L27 5.32031H29.3672L32.5312 14.8242Z" fill="#fff">
+									<animateMotion xlink:href="#joy" dur="3s" begin="2s" fill="freeze" repeatCount="indefinite" path="M340.568 201.561C392.565 253.558 429.995 310.434 450.497 358.219C460.749 382.114 466.759 403.714 468.252 421.281C469.747 438.871 466.706 452.303 459.005 460.005C451.303 467.706 437.871 470.747 420.281 469.252C402.714 467.759 381.113 461.749 357.219 451.498C309.434 430.995 252.558 393.565 200.561 341.568C148.564 289.571 110.601 232.162 89.5661 183.843C79.0479 159.682 72.7718 137.814 71.0799 120.047C69.3856 102.254 72.2975 88.6933 79.9953 80.9955C87.6932 73.2976 101.254 70.3857 119.046 72.08C136.814 73.7719 158.682 80.048 182.843 90.5662C231.162 111.601 288.571 149.564 340.568 201.561Z">
+									</animateMotion>
+
+								</path>
+
+
+
+
+								<!-- <circle id="circle2" cx="0" cy="0" r="6" fill="white">
+	<animateMotion 
+	xlink:href="#circle2"
+	dur="3s"
+	begin="1s"
+	fill="freeze"
+	repeatCount="indefinite"
+	path="M338.439 341.568C286.442 393.565 229.566 430.995 181.781 451.497C157.886 461.749 136.286 467.759 118.719 469.252C101.129 470.747 87.6966 467.706 79.9953 460.005C72.294 452.303 69.2528 438.871 70.7476 421.281C72.2405 403.714 78.2506 382.113 88.5025 358.219C109.005 310.434 146.435 253.558 198.432 201.561C250.429 149.564 307.838 111.601 356.157 90.5661C380.318 80.0479 402.186 73.7718 419.953 72.0799C437.746 70.3856 451.307 73.2975 459.005 80.9953C466.702 88.6932 469.614 102.254 467.92 120.046C466.228 137.814 459.952 159.682 449.434 183.843C428.399 232.162 390.436 289.571 338.439 341.568Z">
+</animateMotion>
+	
+</circle>
+<circle id="circle3" cx="0" cy="0" r="6" fill="white">
+	<animateMotion 
+	xlink:href="#circle3"
+	dur="3s"
+	begin="2s"
+	fill="freeze"
+	repeatCount="indefinite"
+	path="M368.5 272.006C368.5 345.54 354.75 412.225 335.458 460.511C325.811 484.656 314.787 504.18 303.421 517.658C292.04 531.152 280.391 538.5 269.5 538.5C258.609 538.5 246.96 531.152 235.579 517.658C224.213 504.18 213.189 484.656 203.542 460.511C184.25 412.225 170.5 345.54 170.5 272.006C170.5 198.471 184.25 131.032 203.543 81.9919C213.19 57.4696 224.215 37.5692 235.582 23.8091C246.965 10.0301 258.614 2.5 269.5 2.5C280.386 2.5 292.035 10.0301 303.418 23.8091C314.785 37.5692 325.81 57.4696 335.457 81.9919C354.75 131.032 368.5 198.471 368.5 272.006Z">
+</animateMotion>
+</circle>
+<circle id="circle4" cx="0" cy="0" r="6" fill="white">
+	<animateMotion 
+	xlink:href="#circle4"
+	dur="3s"
+	begin="3s"
+	fill="freeze"
+	repeatCount="indefinite"
+	path="M368.5 272.006C368.5 345.54 354.75 412.225 335.458 460.511C325.811 484.656 314.787 504.18 303.421 517.658C292.04 531.152 280.391 538.5 269.5 538.5C258.609 538.5 246.96 531.152 235.579 517.658C224.213 504.18 213.189 484.656 203.542 460.511C184.25 412.225 170.5 345.54 170.5 272.006C170.5 198.471 184.25 131.032 203.543 81.9919C213.19 57.4696 224.215 37.5692 235.582 23.8091C246.965 10.0301 258.614 2.5 269.5 2.5C280.386 2.5 292.035 10.0301 303.418 23.8091C314.785 37.5692 325.81 57.4696 335.457 81.9919C354.75 131.032 368.5 198.471 368.5 272.006Z">
+</circle>
+<circle id="circle5" cx="0" cy="0" r="6" fill="white">
+	<animateMotion 
+	xlink:href="#circle5"
+	dur="3s"
+	begin="4s"
+	fill="freeze"
+	repeatCount="indefinite"
+	path="M270.006 171.5C343.54 171.5 410.225 185.25 458.511 204.542C482.656 214.189 502.18 225.213 515.658 236.579C529.152 247.96 536.5 259.609 536.5 270.5C536.5 281.391 529.152 293.04 515.658 304.421C502.18 315.787 482.656 326.811 458.511 336.458C410.225 355.75 343.54 369.5 270.006 369.5C196.471 369.5 129.032 355.75 79.9919 336.457C55.4696 326.81 35.5692 315.785 21.8091 304.418C8.03015 293.035 0.5 281.386 0.5 270.5C0.5 259.614 8.03015 247.965 21.8091 236.582C35.5692 225.215 55.4696 214.19 79.9919 204.543C129.032 185.25 196.471 171.5 270.006 171.5Z">
+</animateMotion>
+</circle>
+<circle id="circle6" cx="0" cy="0" r="6" fill="white">
+	<animateMotion 
+	xlink:href="#circle6"
+	dur="3s"
+	begin="1s"
+	fill="freeze"
+	repeatCount="indefinite"
+	path="M270.006 171.5C343.54 171.5 410.225 185.25 458.511 204.542C482.656 214.189 502.18 225.213 515.658 236.579C529.152 247.96 536.5 259.609 536.5 270.5C536.5 281.391 529.152 293.04 515.658 304.421C502.18 315.787 482.656 326.811 458.511 336.458C410.225 355.75 343.54 369.5 270.006 369.5C196.471 369.5 129.032 355.75 79.9919 336.457C55.4696 326.81 35.5692 315.785 21.8091 304.418C8.03015 293.035 0.5 281.386 0.5 270.5C0.5 259.614 8.03015 247.965 21.8091 236.582C35.5692 225.215 55.4696 214.19 79.9919 204.543C129.032 185.25 196.471 171.5 270.006 171.5Z">
+	</animateMotion>
+</circle>
+<circle id="circle7" cx="0" cy="0" r="6" fill="white">
+	<animateMotion 
+	xlink:href="#circle7"
+	dur="3s"
+	begin="2s"
+	fill="freeze"
+	repeatCount="indefinite"
+	path="M340.568 201.561C392.565 253.558 429.995 310.434 450.497 358.219C460.749 382.114 466.759 403.714 468.252 421.281C469.747 438.871 466.706 452.303 459.005 460.005C451.303 467.706 437.871 470.747 420.281 469.252C402.714 467.759 381.113 461.749 357.219 451.498C309.434 430.995 252.558 393.565 200.561 341.568C148.564 289.571 110.601 232.162 89.5661 183.843C79.0479 159.682 72.7718 137.814 71.0799 120.047C69.3856 102.254 72.2975 88.6933 79.9953 80.9955C87.6932 73.2976 101.254 70.3857 119.046 72.08C136.814 73.7719 158.682 80.048 182.843 90.5662C231.162 111.601 288.571 149.564 340.568 201.561Z">
+</animateMotion>
+</circle>
+<circle id="circle8" cx="0" cy="0" r="6" fill="white">
+	<animateMotion 
+	xlink:href="#circle8"
+	dur="3s"
+	begin="3s"
+	fill="freeze"
+	repeatCount="indefinite"
+	path="M340.568 201.561C392.565 253.558 429.995 310.434 450.497 358.219C460.749 382.114 466.759 403.714 468.252 421.281C469.747 438.871 466.706 452.303 459.005 460.005C451.303 467.706 437.871 470.747 420.281 469.252C402.714 467.759 381.113 461.749 357.219 451.498C309.434 430.995 252.558 393.565 200.561 341.568C148.564 289.571 110.601 232.162 89.5661 183.843C79.0479 159.682 72.7718 137.814 71.0799 120.047C69.3856 102.254 72.2975 88.6933 79.9953 80.9955C87.6932 73.2976 101.254 70.3857 119.046 72.08C136.814 73.7719 158.682 80.048 182.843 90.5662C231.162 111.601 288.571 149.564 340.568 201.561Z">
+	</animateMotion>
+</circle> -->
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="club-card__cont">
+				<div class="wrapper">
+					<div class="club-card">
+						<form action="">
+							<div class="club-card__title">Получите клубную карту <span>БИОЦЕНТР</span></div>
+							<div class="club-card__text">Отправьте заявку, получите клубную карту БОЦЕНТР<sup>*</sup>, дающую<br> дополнительную <span><b>скидку 10%</b></span> на любые исследования и анализы <span><b>ИНВИТРО</b></span></div>
+							<div class="club-card__middle">
+								<div class="club-card__form">
+									<div class="club-card__wrap">
+										<div class="club-card__input-cont"><input class="club-card-form__input" type="text" required="" /><label class="club-card-form__label">ФИО</label>
+											<div class="forms__error-message"></div>
+										</div>
+										<div class="club-card__input-cont club-card__input-cont--min"><input class="club-card-form__input" type="tel" data-mask="phone" size="25" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" inputmode="tel" required="" /><label class="club-card-form__label">Телефон</label>
+											<div class="forms__error-message"></div>
+										</div>
+										<div class="club-card__input-cont club-card__input-cont--min"><input class="club-card-form__input" type="email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" inputmode="email" /><label class="club-card-form__label">Почта</label>
+											<div class="forms__error-message"></div>
+										</div>
+									</div>
+									<div class="club-card__bottom">
+										<div class="club-card__bottom-text">Нажимая кнопку "Отправить" Вы даете информированное согласие на <a href="#">обработку своих персональных данных</a></div>
+										<div class="club-card__bottom-btn"><input class="club-card__submit btn" type="submit" value="Отправить" /><input class="club-card__submit btn" type="submit" value="Расчитать стоимость" /></div>
+									</div>
+								</div>
+								<div class="club-card__img">
+									<figure><img src="img/card.png" alt="" /></figure>
+									<div class="club-card__img--required">действует во всех офисах ИНВИТРО</div>
+								</div>
+							</div>
+							<div class="club-card__bot">
+								<div class="club-card__bot-phone"><span><a href="">8 (800) 000-00-00</a><span>Консультация специалистов</span></span></div>
+								<div class="club-card__bot-phone"><span><a href="">8 (800) 000-00-00</a><span>секретарь</span></span></div>
+								<div class="club-card__bot-phone"><span><a href="">8 (800) 000-00-00</a><span>предложения о сотрудничестве</span></span></div>
+							</div>
+						</form>
+					</div>
+					<div class="stage">
+						<div class="title">Чтобы улучшить качество жизни, <span>необходимо:</span></div>
+						<div class="stage__list">
+							<div class="stage__item">
+								<div class="stage__arrow"> <span></span></div>
+								<figure class="stage__item-img"><img src="img/stage-1.png" alt="" /></figure>
+								<div class="stage__item-text">
+									<p>Заполнить анамнез,<br> сдать анализы в ИНВИТРО</p>
+								</div>
+							</div>
+							<div class="stage__item">
+								<div class="stage__arrow"><span></span></div>
+								<figure class="stage__item-img"><img src="img/stage-2.png" alt="" /></figure>
+								<div class="stage__item-text">
+									<p>Получить интерпретацию<br> анализов и индивидуальные<br> рекомендации специалистов<br> БИОЦЕНТР</p>
+								</div>
+							</div>
+							<div class="stage__item">
+								<div class="stage__arrow"><span></span></div>
+								<figure class="stage__item-img"><img src="img/stage-3.png" alt="" /></figure>
+								<div class="stage__item-text">
+									<p>Составить с их помощью<br> свой пазл долголетия:</p>
+									<ul>
+										<li>гигиена</li>
+										<li>питание</li>
+										<li>восстановление (сон)</li>
+										<li>физическая культура</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="security-cont">
+				<div class="wrapper">
+					<div class="security">
+						<div class="security-slider">
+							<div class="security-slider__list">
+								<div class="swiper-container">
+									<div class="swiper-wrapper"><a class="security-slider__item fancybox swiper-slide" href="img/photos/security.jpg"><img src="img/photos/security.jpg" alt="" /></a><a class="security-slider__item fancybox swiper-slide" href="img/photos/security.jpg"><img src="img/photos/security.jpg" alt="" /></a><a class="security-slider__item fancybox swiper-slide" href="img/photos/security.jpg"><img src="img/photos/security.jpg" alt="" /></a><a class="security-slider__item fancybox swiper-slide" href="img/photos/security.jpg"><img src="img/photos/security.jpg" alt="" /></a></div>
+								</div>
+							</div>
+							<div class="security-slider__nav">
+								<div class="swiper-arrow swiper-button-prev"></div>
+								<div class="swiper-arrow swiper-button-next"></div>
+							</div>
+						</div>
+						<div class="security-info">
+							<div class="security-info__title">INVITRO — гарантия качества</div>
+							<div class="security-info__text">ИНВИТРО – крупнейшая частная медицинская компания в России,<br> специализирующаяся на высокоточной медицинской диагностике и<br> оказании медицинских услуг.</div>
+							<div class="security-stat">
+								<div class="security-stat__item">
+									<figure><img src="img/stat-1.png" alt="" /></figure>
+									<div class="security-stat__num" data-from="0" data-to="485">0</div>
+									<div class="security-stat__text">городов<br> присутствия</div>
+								</div>
+								<div class="security-stat__item">
+									<figure><img src="img/stat-2.png" alt="" /></figure>
+									<div class="security-stat__num" data-from="0" data-to="8">0</div>
+									<div class="security-stat__text">лабораторных<br> комплексов</div>
+								</div>
+								<div class="security-stat__item">
+									<figure><img src="img/stat-3.png" alt="" /></figure>
+									<div class="security-stat__num" data-from="0" data-to="1163">0</div>
+									<div class="security-stat__text">медицинских<br> офисов</div>
+								</div>
+							</div>
+							<div class="security-link"><a href="#">Invitro.ru</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="testemonials-cont" id="3">
+				<div class="wrapper">
+					<div class="testemonials">
+						<div class="testemonials-title title">Команда</div>
+						<div class="testemonials-nav">
+							<ul class="testemonials-nav__list">
+								<li class="testemonials-nav__item">
+									<div class="testemonials-nav__link"><input type="radio" name="filter" id="1" value="1" /><label for="1">Профессиональные спортсмены</label></div>
+								</li>
+								<li class="testemonials-nav__item">
+									<div class="testemonials-nav__link"> <input type="radio" name="filter" id="2" value="2" /><label for="2">Врачи</label></div>
+								</li>
+								<li class="testemonials-nav__item">
+									<div class="testemonials-nav__link"> <input type="radio" name="filter" id="3" value="3" /><label for="3">Профессиональные тренера</label></div>
+								</li>
+								<li class="testemonials-nav__item">
+									<div class="testemonials-nav__link"> <input type="radio" name="filter" id="4" value="4" /><label for="4">Рефбилитологи</label></div>
+								</li>
+								<li class="testemonials-nav__item reset-filter">Сбросить фильтр</li>
+							</ul>
+						</div>
+						<div class="testemonials-slider">
+							<div class="testemonials-slider__arrow"></div>
+							<div class="testemonials__list">
+								<div class="testemonials__item" data-id="1">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo user"><img src="img/ico-avatar.jpg" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич 1</div>
+											<div class="testemonials__item-subtitle">1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1 (снаружи дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2 (изнутри дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+										<div class="testemonials-soc">
+											<div class="soc"><a class="soc__link" href="#"> <img src="img/ico-fb-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-insta-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-vk-maincolor.svg" /></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="testemonials__item" data-id="1">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo user"><img src="img/ico-avatar.jpg" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич 1</div>
+											<div class="testemonials__item-subtitle">1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1 (снаружи дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2 (изнутри дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+										<div class="testemonials-soc">
+											<div class="soc"><a class="soc__link" href="#"> <img src="img/ico-fb-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-insta-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-vk-maincolor.svg" /></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="testemonials__item" data-id="2">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo user"><img src="img/ico-avatar.jpg" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич 2</div>
+											<div class="testemonials__item-subtitle">1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1 (снаружи дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2 (изнутри дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+									</div>
+								</div>
+								<div class="testemonials__item" data-id="1">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo user"><img src="img/ico-avatar.jpg" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич 1</div>
+											<div class="testemonials__item-subtitle">1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1 (снаружи дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2 (изнутри дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+										<div class="testemonials-soc">
+											<div class="soc"><a class="soc__link" href="#"> <img src="img/ico-fb-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-insta-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-vk-maincolor.svg" /></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="testemonials__item" data-id="3">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo user"><img src="img/ico-avatar.jpg" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич 3</div>
+											<div class="testemonials__item-subtitle">1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1 (снаружи дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2 (изнутри дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+									</div>
+								</div>
+								<div class="testemonials__item" data-id="4">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo user"><img src="img/ico-avatar.jpg" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич 4</div>
+											<div class="testemonials__item-subtitle">1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1 (снаружи дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2 (изнутри дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn"></div>
+										<div class="testemonials-soc">
+											<div class="soc"><a class="soc__link" href="#"> <img src="img/ico-fb-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-insta-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-vk-maincolor.svg" /></a></div>
+										</div>
+									</div>
+								</div>
+								<div class="testemonials__item" data-id="4">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo user"><img src="img/ico-avatar.jpg" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич 4</div>
+											<div class="testemonials__item-subtitle">1977 г.р МС Чемпион России среди студентов, победитель и призёр всероссийских и международных соревнований по дзюдо.</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1 (снаружи дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2 (изнутри дома)</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn"> </div>
+										<div class="testemonials-soc">
+											<div class="soc"><a class="soc__link" href="#"> <img src="img/ico-fb-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-insta-maincolor.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-vk-maincolor.svg" /></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="services-cont" id="2">
+				<div class="wrapper">
+					<div class="services">
+						<div class="services-title title">Услуги</div>
+						<div class="tabs">
+							<div class="services__list">
+								<div class="services__item tabs-tab active" data-id="1">
+									<div class="services__item-info">
+										<div class="services-info__text">Для тех, кто не<br> занимается<br> физкультурой<br> и спортом</div>
+										<div class="services-btn"></div>
+									</div>
+									<div class="services__item-slider">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-1.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-2.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-3.jpg" alt="" /></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="services__item tabs-tab" data-id="2">
+									<div class="services__item-info">
+										<div class="services-info__text">Для тех, кто<br> занимается<br> физкультурой</div>
+										<div class="services-btn"></div>
+									</div>
+									<div class="services__item-slider">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-2.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-1.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-3.jpg" alt="" /></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="services__item tabs-tab" data-id="3">
+									<div class="services__item-info">
+										<div class="services-info__text">Для спортсменов -<br> любителей</div>
+										<div class="services-btn"></div>
+									</div>
+									<div class="services__item-slider">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-3.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-2.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-3.jpg" alt="" /></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="services__item tabs-tab" data-id="4">
+									<div class="services__item-info">
+										<div class="services-info__text">Для<br> профессиональных<br> спортсменов</div>
+										<div class="services-btn"></div>
+									</div>
+									<div class="services__item-slider">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-4.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-2.jpg" alt="" /></figure>
+												<figure class="services__item-img swiper-slide"><img src="img/photos/serv-3.jpg" alt="" /></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content active" data-id="1">
+								<div class="services__content">
+									<div class="services__content-title">Для профессиональных спортсменов 1</div>
+									<div class="services__content-wr">
+										<div class="services-slider">
+											<div class="swiper-container">
+												<div class="swiper-wrapper"><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a></div>
+											</div>
+											<div class="services-slider__nav">
+												<div class="swiper-arrow swiper-button-prev"></div>
+												<div class="swiper-arrow swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="services-info">
+											<div class="services__price-label">Стоимость услуги</div>
+											<div class="services__price">1 500 <i class="rub">₽</i></div>
+											<div class="services-info__text">
+												<div class="text-page">
+													<p>При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.</p>
+													<h4>Что входит в стоимость?</h4>
+													<ul>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+														<li>рекомендуемый список анализов</li>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+													</ul>
+												</div>
+											</div>
+											<div class="services-info__btn"><a class="btn" href="">Оставить заявку</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content" data-id="2">
+								<div class="services__content">
+									<div class="services__content-title">Для профессиональных спортсменов 2</div>
+									<div class="services__content-wr">
+										<div class="services-slider">
+											<div class="swiper-container">
+												<div class="swiper-wrapper"><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a></div>
+											</div>
+											<div class="services-slider__nav">
+												<div class="swiper-arrow swiper-button-prev"></div>
+												<div class="swiper-arrow swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="services-info">
+											<div class="services__price-label">Стоимость услуги</div>
+											<div class="services__price">1 500 <i class="rub">₽</i></div>
+											<div class="services-info__text">
+												<div class="text-page">
+													<p>При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.</p>
+													<h4>Что входит в стоимость?</h4>
+													<ul>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+														<li>рекомендуемый список анализов</li>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+													</ul>
+												</div>
+											</div>
+											<div class="services-info__btn"><a class="btn" href="">Оставить заявку</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content" data-id="3">
+								<div class="services__content">
+									<div class="services__content-title">Для профессиональных спортсменов 3</div>
+									<div class="services__content-wr">
+										<div class="services-slider">
+											<div class="swiper-container">
+												<div class="swiper-wrapper"><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a></div>
+											</div>
+											<div class="services-slider__nav">
+												<div class="swiper-arrow swiper-button-prev"></div>
+												<div class="swiper-arrow swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="services-info">
+											<div class="services__price-label">Стоимость услуги</div>
+											<div class="services__price">1 500 <i class="rub">₽</i></div>
+											<div class="services-info__text">
+												<div class="text-page">
+													<p>При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.</p>
+													<h4>Что входит в стоимость?</h4>
+													<ul>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+														<li>рекомендуемый список анализов</li>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+													</ul>
+												</div>
+											</div>
+											<div class="services-info__btn"><a class="btn" href="">Оставить заявку</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-content" data-id="4">
+								<div class="services__content">
+									<div class="services__content-title">Для профессиональных спортсменов 4</div>
+									<div class="services__content-wr">
+										<div class="services-slider">
+											<div class="swiper-container">
+												<div class="swiper-wrapper"><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a><a class="services-slider__item fancybox swiper-slide" href="img/photos/services.jpg"><img src="img/photos/services.jpg" alt="" /></a></div>
+											</div>
+											<div class="services-slider__nav">
+												<div class="swiper-arrow swiper-button-prev"></div>
+												<div class="swiper-arrow swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="services-info">
+											<div class="services__price-label">Стоимость услуги</div>
+											<div class="services__price">1 500 <i class="rub">₽</i></div>
+											<div class="services-info__text">
+												<div class="text-page">
+													<p>При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми этими экспериментами на выживание над собственным телом.</p>
+													<h4>Что входит в стоимость?</h4>
+													<ul>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+														<li>рекомендуемый список анализов</li>
+														<li>диагностика</li>
+														<li>сопровождение пациента на протяжении лечения</li>
+													</ul>
+												</div>
+											</div>
+											<div class="services-info__btn"><a class="btn" href="">Оставить заявку</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="information-cont">
+				<div class="wrapper">
+					<div class="information">
+						<div class="information-img">
+							<div class="circle"></div><img src="img/information.png" alt="" />
+						</div>
+						<div class="information-info">
+							<div class="information-text">Для достижения результата<br> данные исследования<br> необходимо проходить<br> 4 раза в год</div>
+							<div class="information-info__dop">1 раз в сезон</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="reviews-cont" id="4">
+				<div class="wrapper">
+					<div class="testemonials">
+						<div class="testemonials-title title">Отзывы</div>
+						<div class="testemonials__list-cont">
+							<div class="testemonials-slider__arrow"></div>
+							<div class="testemonials__list">
+								<div class="testemonials__item">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo"><img src="img/ico-avatar-1.png" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+										<div class="testemonials-data">05.03.2019</div>
+									</div>
+								</div>
+								<div class="testemonials__item">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo"><img src="img/ico-avatar-1.png" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+										<div class="testemonials-data">05.03.2019</div>
+									</div>
+								</div>
+								<div class="testemonials__item">
+									<div class="testemonials__item-top">
+										<div class="testemonials__item-photo"><img src="img/ico-avatar-1.png" /></div>
+										<div>
+											<div class="testemonials__item-title">Востриков Андрей Евгеньевич</div>
+										</div>
+									</div>
+									<div class="testemonials__item-middle">
+										<div class="testemonials__item-text">При всей этой яркой картинке массового увлечения здоровым образом жизни по-прежнему отсутствует один, но такой важный пазл - врачебный контроль за всеми ...</div>
+									</div>
+									<div class="testemonials__item-files">
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 1</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+										<div class="testemonials__item-file ico-jpg">
+											<div class="file-name">Photo 2</div>
+											<div class="file-weight">17.6 Кб</div>
+										</div>
+									</div>
+									<div class="testemonials__item-btn">
+										<div class="testemonials-btn">Развернуть</div>
+										<div class="testemonials-data">05.03.2019</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="faq-cont" id="5">
+				<div class="wrapper">
+					<div class="faq">
+						<div class="faq-title title">FAQ</div>
+						<div class="faq__list">
+							<div class="faq__item">
+								<div class="faq__item-top"><span>Что такое спортивный чек-акт?</span>
+									<div class="faq-arrow"></div>
+								</div>
+								<div class="faq__item-bot">
+									<div class="text-page">
+										<p>Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.</p>
+										<p>Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:</p>
+										<ul>
+											<li>общий анализ крови</li>
+											<li>биохимический анализ крови</li>
+											<li>общий анализ мочи</li>
+											<li>холестирин</li>
+										</ul>
+										<p>По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top"><span>Что такое ЗОЖ чек-ар?</span>
+									<div class="faq-arrow"></div>
+								</div>
+								<div class="faq__item-bot">
+									<div class="text-page">
+										<p>Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.</p>
+										<p>Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:</p>
+										<ul>
+											<li>общий анализ крови</li>
+											<li>биохимический анализ крови</li>
+											<li>общий анализ мочи</li>
+											<li>холестирин</li>
+										</ul>
+										<p>По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top"><span>Как управлять здоровьем - с помощью?</span>
+									<div class="faq-arrow"></div>
+								</div>
+								<div class="faq__item-bot">
+									<div class="text-page">
+										<p>Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.</p>
+										<p>Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:</p>
+										<ul>
+											<li>общий анализ крови</li>
+											<li>биохимический анализ крови</li>
+											<li>общий анализ мочи</li>
+											<li>холестирин</li>
+										</ul>
+										<p>По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура</p>
+									</div>
+								</div>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top"><span>Неинвазивно?</span>
+									<div class="faq-arrow"></div>
+								</div>
+								<div class="faq__item-bot">
+									<div class="text-page">
+										<p>Систематический контроль показателей здоровья не только является неотъемлемой частью здорового образа жизни, но и жизненно необходим. Некоторые серьезные заболевания долгое время протекают без симптомов.</p>
+										<p>Для того, чтобы понять, что происходит с организмом в настоящий момент, мы предлагаем вам заполнить анамнез и сдать следующие анализы:</p>
+										<ul>
+											<li>общий анализ крови</li>
+											<li>биохимический анализ крови</li>
+											<li>общий анализ мочи</li>
+											<li>холестирин</li>
+										</ul>
+										<p>По итогам исследований вы получите персональные рекомендации по улучшению качества вашей жизни: сон, питание, гигиена, физкультура</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer-cont" id="6">
+		<div class="contacts-cont">
+			<div class="wrapper">
+				<div class="contacts">
+					<div class="contacts-top">
+						<div class="contacts-title title">Контакты</div>
+						<div class="contacts-soc">
+							<div class="soc"><a class="soc__link" href="#"> <img src="img/ico-fb.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-insta.svg" /></a><a class="soc__link" href="#"> <img src="img/ico-vk.svg" /></a></div>
+						</div>
+					</div>
+					<div class="contacts-map">
+						<div class="map"><img src="img/map.jpg" alt="" /></div>
+						<div class="map-info">
+							<div class="map-info__title">Пройди обследование<br> со скидкой 10%</div>
+							<div class="map-info__btn"><a class="btn" href="">Открыть список цетров</a></div>
+						</div>
+					</div>
+					<div class="contacts-info">
+						<p>Сиcтема менеджмента качества ИНВИТРО соответствует требованиям нормативных документов ГОСТ Р ИСО 15189:2015 «Лаборатории медицинские.<br> Частные требования к качеству и компетентности» и ГОСТ 9001-2015 (ISO 9001:2015). Для подтверждения достоверности выполняемых исследований ИНВИТРО регулярно принимает участие в нескольких программах внешней оценки качества:</p>
+						<ul>
+							<li><b>ФСВОК</b> - Система Внешней Оценки Качества клинических лабораторных исследований (Россия);</li>
+							<li><b>RIQAS</b> - Randox(Великобритания);</li>
+							<li><b>EQAS</b> - BIO-Rad (США)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="footer">
+				<div class="footer-political"><span>Не являемся медицинской организацией</span><a href="">Политика конфиденциальности</a></div>
+				<div class="footer-copy"><span class="ico-age">18+</span><span class="copy">© Био Центр 2018</span></div>
+				<div class="footer-dev"><a class="dev" href="#"><img src="img/ico-dev.svg" alt="" /></a></div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

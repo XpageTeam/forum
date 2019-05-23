@@ -1,0 +1,230 @@
+html
+	font-size: 100%
+
+input, a, button, textarea, select
+	outline: none
+
+*::-webkit-input-placeholder
+	color: #adb4c6
+	opacity: 1
+
+*:-moz-placeholder
+	color: #adb4c6
+	opacity: 1
+
+*::-moz-placeholder
+	color: #adb4c6
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #adb4c6
+	opacity: 1
+
+.slick-arrow
+	border: none
+	background: none
+	padding: 0
+	text-indent: -9999px
+	overflow: hidden
+
+.swiper-button-disabled
+	opacity: .5
+	pointer-events: none
+
+.slick-slide
+	height: auto !important
+
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea, select, input[type="submit"], button
+	-webkit-appearance: none
+	appearance: none
+	font: inherit
+
+	&:focus
+
+		&::-webkit-input-placeholder
+			opacity: 0
+
+		&:-moz-placeholder
+			opacity: 0
+
+		&::-moz-placeholder
+			opacity: 0
+
+		&:-ms-input-placeholder
+			opacity: 0
+
+input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea, select
+	border-radius: 0
+
+input
+	padding: 0 25px
+
+*, *:after, *:before
+	box-sizing: border-box
+
+*[v-cloak]
+	display: none
+
+i.rub
+	font-family: "Roboto"
+	font-style: normal
+
+address
+	font-weight: inherit
+
+body
+	min-width: 320px
+	line-height: lh(22, 16)
+	font-family: var(--default-font)
+	font-weight: 500
+	font-size: 14px
+	background: #f5f7f9
+	color: #4e4949
+	position: relative
+	left: 0
+	display: flex
+	flex-direction: column
+	width: 100%
+
+	&:not(.main)
+		min-height: 100vh
+
+
+
+	&.inner
+
+		#content
+			display: flex
+			flex: 1 1 auto
+
+
+
+select
+	-webkit-appearance: none
+	/* for FF */
+	-moz-appearance: none
+	text-indent: 0.01px
+	text-overflow: ''
+	/* for IE */
+	-ms-appearance: none
+	appearance: none!important
+
+	&::-ms-expand 
+		display: none
+
+.head, .footer
+	flex: none
+
+#content
+	height: 100%
+	// display: flex
+	// flex-direction: column
+	transition: transform .3s ease
+	z-index: 2
+	background: var(--second-color)
+
+a
+	color: #000
+	font-weight: inherit
+	text-decoration: none
+
+	&[href^="tel"], &[href^="mail"]
+		white-space: nowrap
+
+	&:not([class])
+		color: var(--mainColor)
+		border-bottom: 1px solid transparent
+
+		&:hover, &:focus
+			border-color: currentColor
+
+.wrapper
+	max-width: var(--base-width)
+	padding: 0 2rem
+	margin: 0 auto
+	box-sizing: content-box
+
+input[type="submit"], button
+	cursor: pointer
+
+img, svg
+	max-width: 100%
+
+li
+	list-style: none
+
+.table-wrap
+	position: relative
+
+	&__track
+		overflow-x: auto
+		-webkit-overflow-scrolling: touch
+
+	&__shadow
+		width: 12px
+		position: absolute 0 *
+		pointer-events: none
+		background: linear-gradient(to right, rgba(#fff, .0001), rgba(#000, .1))
+		opacity: 0
+
+		&--left
+			left: 0	
+			transform: rotateZ(180deg)
+
+		&--right
+			right: 0	
+
+.soc
+	display: flex
+	flex-wrap: wrap
+
+	&__link
+		display: flex
+		align-items: center
+		justify-content: center
+		size: 40px
+		border: 1px solid #fff
+		border-radius: 50%
+		transition: border-color .3s ease
+
+		&:not(:last-child)
+			margin-right: 12px
+
+		&:hover 
+			border-color: #ec6b65
+
+
+.btn
+	border-radius: 31px
+	padding: 15px 26px 17px
+	line-height: 1
+	color: var(--main-color)
+	background: #fff
+	display: inline-block
+	transition: background .3s ease
+	white-space: nowrap
+
+	&:hover
+		background: #ec6b65 !important
+		color: #fff !important
+
+	&--color
+		background: var(--main-color)
+		color: #fff
+
+input
+	&.btn 
+		border: 0
+
+
+@media screen and (max-width: 1300px)
+	
+	.btn
+		padding: 12px 20px 12px
+
+@media screen and (max-width: 660px)
+	
+	.btn
+		padding: 9px 13px 8px
+
+

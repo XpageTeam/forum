@@ -1,0 +1,203 @@
+@import "../css/common.css"
+
+@import "_vars.sss"
+@import "_base.sss"
+@import "_text-styles.sss"
+@import "_form-elements.sss"
+// @import "_title-block.sss"
+// @import "_paginator.sss"
+
+// @import "_header.sss"
+// // @import "_404.sss"
+// @import "_main-banner.sss"
+// @import "_club-card.sss"
+// @import "_stage.sss"
+// @import "_security.sss"
+// @import "_testemonials.sss"
+// @import "_services.sss"
+// @import "_tabs.sss"
+// @import "_information.sss"
+// @import "_reviews.sss"
+// @import "_faq.sss"
+// @import "_contacts.sss"
+
+
+// @import "_footer.sss"
+
+
+
+.ico
+	&-sale, &-info
+		position: absolute
+		top: 27px
+		left: 31px
+		border-radius: 3px
+		color: #fff
+		padding: 6px 14px
+		line-height: 1
+		font-size: 14px
+
+	&-sale
+		background: #3b88df
+
+	&-info
+		background: var(--main-color)
+
+	&-jpg
+		background: url('../img/ico-jpg.png') no-repeat left top
+
+	&-zoom, &-download
+		size: 42px
+		background-color: var(--second-color)
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-position: center
+
+	&-zoom
+		background-image: url('../img/ico-zoom.png')
+
+	&-download
+		background-image: url('../img/ico-download.png')
+
+
+.title 
+	font-size: rem(30)
+	font-weight: bold
+
+	span 
+		color: var(--main-color)
+
+.swiper
+	&-button
+		&-prev
+			transform: rotate(180deg)
+		&-next
+
+	&-arrow
+		size: 45px !important
+		border-radius: 50%
+		background: #fff !important
+		z-index: 10
+
+		&:before 
+			content: ''
+			position: absolute
+			top: calc(50% -3px)
+			left: calc(50% -3px)
+			size: 6px 
+			border-top: 1px solid var(--main-color)
+			border-right: 1px solid var(--main-color)
+			transform: rotate(45deg)
+
+.mobile-menu
+	position: fixed
+	top: 0
+	right: 0
+	width: 250px
+	bottom: 0
+	background: var(--second-color)
+	overflow: auto
+	// height: calc(100vh - 90px)
+
+	&:before 
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+
+
+	.soc 
+		padding: 15px
+
+		&__link 
+			border-color: var(--main-color)
+
+			img 
+				filter: brightness(56%)
+
+	.head__contacts
+		display: flex 
+		flex-direction: column-reverse
+		margin: 0
+
+	.h-city
+		position: relative
+
+		&:after 
+			content: ''
+			position: absolute
+			right: 15px
+			top: calc(50% - 3px)
+			size: 6px
+			border-right: 1px solid #000
+			border-bottom: 1px solid #000
+			transform: rotate(45deg)
+
+		&__select
+			padding: 15px
+			border: 0
+			width: 100%
+			background: var(--second-color)
+			border-bottom: 1px solid var(--main-color)
+
+	.h-phone
+		border-bottom: 1px solid var(--main-color)
+
+		a 
+			padding: 15px
+			display: block
+			text-align: left
+			color: var(--main-color)
+			font-size: rem(18)
+
+
+
+	.h-menu
+		flex-direction: column
+
+		a 
+			color: var(--main-color)
+			display: block
+			padding: 15px
+			font-size: rem(18)
+			font-weight: bold
+
+
+		li 
+			margin: 0 !important
+			border-bottom: 1px solid var(--main-color)
+
+			&:after 
+				display: none
+
+
+
+@media screen and (max-width: 1000px)
+	.title 
+		font-size: 1.4rem
+
+@media screen and (max-width: 667px)
+	.wrapper 
+		padding: 0 20px
+
+	.slick
+		&-arrow
+			width: 30px
+			height: 30px
+
+		&-next
+			right: -13px
+
+		&-prev
+			left: -13px
+
+	#mapAll
+		height: 100vh !important
+		width: 100vh !important
+
+	.fancybox-slide--html .fancybox-content
+		margin-bottom: 0 !important
+	
+	#mapAllHide
+		.map-info
+			display: none !important
