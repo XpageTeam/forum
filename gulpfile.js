@@ -72,12 +72,12 @@ gulp.task("svg", e =>
 		.pipe($.replace("^gt;", ">"))
 		.pipe(require("gulp-svg-sprite")({
 			mode: {
-				symbol: {
-					sprite: "sprite.svg"
+				stack: {
+					sprite: "../sprite.svg"
 				}
 			}
 		}))
-		.pipe(gulp.dest("src/pug/"))
+		.pipe(gulp.dest("src/img/"))
 )
 
 gulp.task("postcss", _ => 

@@ -1,33 +1,70 @@
+footer.footer-cont
+	.wrapper
+		.footer-top
+			.footer-menu
+				.footer-menu__totle Недвижимость
+				ul
+					li
+						a(href="") Новостройки
+					li
+						a(href="") Вторичное жилье
+					li
+						a(href="") Аренда квартир / домов
+					li
+						a(href="") Коммерческая недвижимость
+					li
+						a(href="") Загородная недвижимость
+					li
+						a(href="") Земельные участки
+			.footer-menu
+				.footer-menu__totle Агентство недвижимости
+				ul
+					li
+						a(href="") О компании
+					li
+						a(href="") Услуги
+					li
+						a(href="") Недвижимость
+					li
+						a(href="") Ипотека
+					li
+						a(href="") Юридические услуги
+					li
+						a(href="") Работа у нас
+					li
+						a(href="") Отзывы
+					li
+						a(href="") Блог
+					li
+						a(href="") Контакты
 
-footer.footer-cont#6
-	.contacts-cont
-		.wrapper
-			.contacts
-				.contacts-top
-					.contacts-title.title Контакты
-					.contacts-soc
-						.soc
-							a.soc__link(href="#") 
-								img(src="img/ico-fb.svg")
-							a.soc__link(href="#") 
-								img(src="img/ico-insta.svg")
-							a.soc__link(href="#") 
-								img(src="img/ico-vk.svg")
-				.contacts-map
-					.map
-						img(src="img/map.jpg", alt="")
+			.footer-contacts
+				.footer-contacts__title Контакты
+				.footer-contacts__list
+					.footer-contacts__phone
+						span
+							svg.ico
+								use(xlink:href="#ico-phone")
+						a(href="tel: 8 800-000-45-56") 8 800-000-45-56
+					.footer-contacts__address
+						span
+							svg.ico
+								use(xlink:href="#ico-location")
+						| г. Москва ул. Братьев Фонченко, д. 11
+					.footer-contacts__email
+						span
+							svg.ico
+								use(xlink:href="#ico-email")
+						a(href="mailto: site@sitename.ru") site@sitename.ru
+		.footer-middle
+			.advance__list
+				.advance__item
+					figure
+						img
+					.advance__item-text
 
-					.map-info
-						.map-info__title Пройди обследование<br> со скидкой 10%
-						.map-info__btn
-							a(href="").btn Открыть список цетров
 
-				.contacts-info
-					p Сиcтема менеджмента качества ИНВИТРО соответствует требованиям нормативных документов ГОСТ Р ИСО 15189:2015 «Лаборатории медицинские.<br> Частные требования к качеству и компетентности» и ГОСТ 9001-2015 (ISO 9001:2015). Для подтверждения достоверности выполняемых исследований ИНВИТРО регулярно принимает участие в нескольких программах внешней оценки качества:
-					ul
-						li <b>ФСВОК</b> - Система Внешней Оценки Качества клинических лабораторных исследований (Россия);
-						li <b>RIQAS</b> - Randox(Великобритания);
-						li <b>EQAS</b> - BIO-Rad (США)
+			
 	.wrapper
 		.footer
 			.footer-political
@@ -42,6 +79,6 @@ footer.footer-cont#6
 
 #sprite(style="display: none")
 	<!-- Эту свг нужно вставлять инклюдом, т.к. она может меняться -->
-	include ../symbol/sprite.svg
+	include ../../img/sprite.svg
 
 include forms.pug
