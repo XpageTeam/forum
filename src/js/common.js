@@ -227,20 +227,7 @@ document.addEventListener("DOMContentLoaded", e => {
 	if (!is.touchDevice()){
 		window.selectizeOpen = false;
 
-		$("select:not(.not-selectize)").selectize({
-			onDropdownOpen(){
-				window.selectizeOpen = true;
-
-				if (window.fullpage)
-					window.fullpage.setAllowScrolling(false)
-			},
-			onDropdownClose(){
-				window.selectizeOpen = false;
-
-				if (window.fullpage)
-					window.fullpage.setAllowScrolling(true)
-			}
-		})
+		$("select:not(.not-selectize)").selectize()
 	}
 
 	

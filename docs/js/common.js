@@ -21446,18 +21446,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
 	if (!_is_js2.default.touchDevice()) {
 		window.selectizeOpen = false;
 
-		(0, _jquery2.default)("select:not(.not-selectize)").selectize({
-			onDropdownOpen: function onDropdownOpen() {
-				window.selectizeOpen = true;
-
-				if (window.fullpage) window.fullpage.setAllowScrolling(false);
-			},
-			onDropdownClose: function onDropdownClose() {
-				window.selectizeOpen = false;
-
-				if (window.fullpage) window.fullpage.setAllowScrolling(true);
-			}
-		});
+		(0, _jquery2.default)("select:not(.not-selectize)").selectize();
 	}
 
 	(0, _jquery2.default)("body").on("click", function (e) {

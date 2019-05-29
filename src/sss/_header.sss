@@ -1,130 +1,188 @@
 .head
-	position: absolute
-	top: 0
-	left: 0
-	width: 100%
-	padding: 40px 72px
-	z-index: 100
+	&-top
+		display: flex
+		align-items: center
+
+		&-cont
+			display: flex
+			justify-content: space-around
+			align-items: center
+			min-height: 72px
+			border-bottom: 1px solid var(--border-color)
+
+			.wrapper
+				margin: 0
+
+		&__img
+			img
+				display: block
+
+			&:first-child
+				margin-bottom: auto
+
+	&-favorite
+		margin-left: 50px
+
+		span
+			display: flex
+			align-items: center
+
+		.ico
+			size: 20px
+
+		svg
+			fill: var(--main-color)
+
+	&-search
+		cursor: pointer
+		margin-left: 18px
+
+		span
+			display: flex
+			align-items: center
+
+		.ico
+			size: 20px
+
+		svg
+			fill: var(--main-color)
+
+	
+	&__contacts
+		&-phones, &-city
+			display: flex
+
+			.ico
+				size: 13px
+				margin-right: 14px
+
+			svg
+				fill: var(--second-color)
+
+	&__durations
+		display: flex
+
+		.ico
+			size: 13px
+			margin-right: 14px
+
+		svg
+			fill: var(--second-color)
+
+	&__duration
+		display: flex
+		flex-direction: column
+		line-height: 1
+
+		span
+			&:not(:first-child)
+				margin-top: 5px
 
 
-	&__wrap
+	&-middle
 		display: flex
 		justify-content: space-between
-		align-items: center
-		flex-wrap: wrap
+		padding: 28px 0
 
-	&.js__scrolled
-		transform: translateY(-100%)
-		background: url('../img/main-banner.jpg') no-repeat left top
-		background-size: cover
-		z-index: 100
-		padding: 25px 72px
-		position: fixed
+		.selectize-dropdown
+			padding: 23px 26px
+			border-radius: 20px
+			background: #fff
+			width: auto !important
+			border: 0
+			box-shadow: none
+			transform: translateX(-26px)
 
-		&.js__show
-			transform: translateY(0)
-			transition: transform .3s ease
-			z-index: 999
+			.option
+				font-size: rem(13)
+				border-radius: 20px
+				text-align: left !important
+
+			&-content
+
+				&::-webkit-scrollbar
+					width: 8px
+
+					&-track 
+						-webkit-box-shadow: var(--main-color)
+						border-radius: 10px
+
+					&-thumb 
+						border-radius: 10px
+						-webkit-box-shadow: #f9f9fa
 
 
 
-.logo
-	display: flex 
-	align-items: center
 
-	img
-		&:not(:first-child)
-			margin-left: 25px
+		.selectize-input.dropdown-active::before
+			display: none
 
+
+
+		.selectize-control
+			&.single
+				display: flex
+
+				.selectize-input
+					cursor: pointer !important
+					padding: 0
+					border: 0
+					box-shadow: none
+					display: flex !important
+					align-items: center
+					overflow: visible
+
+					&.full
+						background: transparent
+
+					.item
+						margin-right: 10px
+
+					&:after
+						border: 0
+						background-color: transparent !important
+						border-color: transparent !important
+						transform: none !important
+						border-color: none !important
+						border-width: none !important
+						border-right: 1px solid #000 !important
+						border-bottom: 1px solid #000 !important
+						margin: 0 !important
+						position: absolute
+						position: relative
+						position: static
+						right: 0 !important
+						size: 6px !important
+						display: block !important
+						// top: calc(50% - 3px)
+						transform: rotate(45deg) !important
+						margin-right: 2px
+
+					input
+						display: none !important
+
+
+		.selectize-dropdown 
+			[data-selectable].option
+				text-align: right
+				cursor: pointer
+
+	&-menu
+		display: flex
 
 .h-menu
 	display: flex
-	&__item
-
-		position: relative
-
-		&:after 
-			content: ""
-			position: absolute
-			bottom: 0
-			left: 0
-			width: 50%
-			height: 1px
-			background: transparent
-			display: block
-			left: calc(50% - 25%)
-			transition: width .3s ease, left .3s ease
-
-		&:hover 
-			&:after 
-				width: 100%
-				left: 0
-				background: #fff
-
-		&:not(:first-child)
-			margin-left: 55px
-
-		&.active
-			&:after
-				background: #fff
-
-
-
 
 	&__link
-		color: #fff
-		display: block
-		padding: 15px 0
+		padding: 0 16px
+		line-height: 1
+		font-size: rem(12)
+		text-transform: uppercase
+		font-weight: bold
+		white-space: nowrap
 
-
-
-.h-phone
-	a
-		font-weight: 700
-		color: #fff
-
-.head__contacts
-	.selectize-input
-		background-color: transparent !important
-		border: 0
-		box-shadow: none !important
-		text-align: right
-		color: #fff
-		padding: 8px 17px 0 17px
-
-.head
-
-	&__contacts-phones
-		text-align: right
-	.selectize-control.single 
-		.selectize-input
-			cursor: pointer !important
-			&:after
-				border: 0
-				background-color: transparent !important
-				border-color: transparent !important
-				transform: none !important
-				border-color: none !important
-				border-width: none !important
-				border-right: 1px solid #fff !important
-				border-bottom: 1px solid #fff !important
-				margin: 0 !important
-				position: absolute
-				right: 2px !important
-				size: 6px !important
-				display: block !important
-				top: calc(50% - 3px)
-				transform: rotate(45deg) !important
-
-			input
-				display: none !important
-
-	.selectize-dropdown 
-		[data-selectable].option
-			text-align: right
-			cursor: pointer
-
-
+.h-submenu
+	display: none
 
 .head__burger
 	display: none

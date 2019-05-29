@@ -1,7 +1,7 @@
 header.head
 	.head-top-cont
 		.head-top__img
-			img(src="img/head-top-img-1.png", alt="")
+			img(src="img/head-top-img-1.svg", alt="")
 		.wrapper
 			.head-top
 				nav.head__menu
@@ -38,51 +38,57 @@ header.head
 							a.h-menu__link(href="#") Блог
 						li.h-menu__item
 							a.h-menu__link(href="#") Контакты
-				a(href="").head-favorite
-				.head-search
-
-		.head-top__img
-			img(src="img/head-top-img-1.png", alt="")
-
-	.head-middle-cont
-		.wrapper
-			.head-middle
-				.head__logo
-					a.logo(href="#")
-						img.logo__white.active(src="img/logo.png" alt="")
-
-				.head__contacts
-					.head__contacts-phones
-						span
-							svg.ico
-								use(xlink:href="#ico-tel")
-						address.h-phone
-							a(href="tel: 88002434552") 8 800-243-45-52
-					.h-city
-						span
-							svg.ico
-								use(xlink:href="#ico-location")
-						select.h-city__select
-							option(value="0" selected="") Челябинск
-							- for (let i = 1; i <= 2; i++)
-								option(value=i) Екатеринбург
-							option(value="4") Москва
-							option(value="5") Комсомольск-на-Амуре
-				.head__durations
+				a(href="#").head-favorite
 					span
 						svg.ico
-							use(xlink:href="#ico-time")
-					.head__duration 
-						span пн-пт с 9:00 до 20:00
-						span сб с 10:00 до 18:00
+							use(xlink:href="#ico-heart")
 
-				.head__btn
-					a(href="").btn Оставить заявку
-				
+				.head-search
+					span
+						svg.ico
+							use(xlink:href="#ico-zoom")
+		.head-top__img
+			img(src="img/head-top-img-2.svg", alt="")
 
-				.head__burger
-					.burger
-						span
+
+	.wrapper
+		.head-middle
+			.head__logo
+				a.logo(href="#")
+					img.logo__white.active(src="img/logo.svg" alt="")
+
+			.head__contacts
+				.head__contacts-phones
+					span
+						svg.ico
+							use(xlink:href="#ico-tel")
+					address.h-phone
+						a(href="tel: 88002434552") 8 800-243-45-52
+				.head__contacts-city
+					span
+						svg.ico
+							use(xlink:href="#ico-location")
+					select.h-city__select
+						option(value="0" selected="") Челябинск
+						- for (let i = 1; i <= 2; i++)
+							option(value=i) Екатеринбург
+						option(value="4") Москва
+						option(value="5") Комсомольск-на-Амуре
+			.head__durations
+				span
+					svg.ico
+						use(xlink:href="#ico-time")
+				.head__duration
+					span пн-пт с 9:00 до 20:00
+					span сб с 10:00 до 18:00
+
+			.head__btn
+				a(href="").btn Оставить заявку
+			
+
+			.head__burger
+				.burger
+					span
 
 	.head-bot-cont
 		.wrapper
